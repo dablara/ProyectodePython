@@ -3,6 +3,8 @@
 #* 30% de la calificación del examen final.
 #* 15% de la calificación de un trabajo final
 
+# Autor: Daniel Blanco Aranda
+
 nota1 = int(input('Introduce primera nota parcial '))
 nota2 = int(input('Introduce segunda nota parcial '))
 nota3 = int(input('Introduce tercera nota parcial '))

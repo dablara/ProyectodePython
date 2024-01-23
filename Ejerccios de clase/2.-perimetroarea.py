@@ -1,5 +1,6 @@
 # 2. Calcular el perímetro y área de un rectángulo dada su base y su altura.
 
+# Autor: Daniel Blanco Aranda
 
 base = int(input('Escribe la base del rectangulo '))
 altura = int(input('Escribe la altura del rectangulo '))

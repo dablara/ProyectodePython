@@ -1,10 +1,5 @@
- 
-
-
-
-
-# 5. Escribir un programa que convierta un valor dado en grados Fahrenheit a grados Celsius.
-
+ # 5. Escribir un programa que convierta un valor dado en grados Fahrenheit a grados Celsius.
+ # Autor: Daniel Blanco Aranda
 
 
 faren = int(input('¿Cuantos grados Fahrenheit hay? '))

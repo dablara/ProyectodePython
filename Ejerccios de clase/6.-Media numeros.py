@@ -1,5 +1,6 @@
 # 6. Calcular la media de tres números pedidos por teclado.
 
+# Autor: Daniel Blanco Aranda
 
 
 

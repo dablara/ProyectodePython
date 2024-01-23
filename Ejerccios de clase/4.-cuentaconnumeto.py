@@ -1,5 +1,6 @@
 # 4. Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.
 
+# Autor: Daniel Blanco Aranda
 
 
 n1 = int(input('¿Cual es el primer numero? '))

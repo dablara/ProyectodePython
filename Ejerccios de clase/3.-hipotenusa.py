@@ -1,5 +1,7 @@
 
 # 3. Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
+# Autor: Daniel Blanco Aranda
+
 import math
 
 

@@ -4,6 +4,8 @@
 # mirad las librerías que os comenten cuando busquéis y entendedlas antes de poneros, 
 # vamos, que tengáis una idea a grosso modo de para qué se usan
 
+# Autor: Daniel Blanco Aranda
+
 import subprocess
 nombrecar = input  ("Di el nombre de la carpeta ")
 

@@ -1,6 +1,8 @@
 
 #Escribe un programa que pregunte el nombre y la edad del usuario y despues los muestre por pantalla con la frase 
 # "Tu nombre es (nombre) y tu edad es (edad)"
+
+# Autor: Daniel Blanco Aranda
 nombre = input ('¿Como te llamas')
 edad = input ('¿Que edad tienes?')
 

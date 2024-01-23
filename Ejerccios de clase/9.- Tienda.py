@@ -1,6 +1,8 @@
 # 9. Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber 
 # cuanto deberá pagar finalmente por su compra.
 
+# Autor: Daniel Blanco Aranda
+
 precio =  float (input('Introduzca el precio de la compra '))
 
 ahorro = (15*precio)/100 #tambien podemos poner precio*0.15
