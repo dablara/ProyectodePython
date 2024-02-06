@@ -5,10 +5,10 @@
 primo = True
 
 
-numero = int(input("Introdúce un numero "))
+numero = int(input("Introduce un numero "))
 
 
-for num in  range(2,numero):
+for num in range(2,numero):
     if numero % num == 0:
         primo = False
         break
