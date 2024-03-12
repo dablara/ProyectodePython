@@ -5,7 +5,7 @@
 primo = True
 
 
-numero = int(input("Introduce un numero "))
+numero = int(input("Introduce un número "))
 
 
 for num in range(2,numero):
