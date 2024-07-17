@@ -10,6 +10,7 @@ import os # Nos permite interactuar con el Sistema operativo.
 
 print("Bienvenido al menú de opciones")
 print ("En este menú podras elegir entre varias opciones para una buena Administración de Linux")
+
 # Creamos el menú con sus opciones
 
 ops = True
@@ -35,7 +36,7 @@ while ops:
         try:
             subprocess.run(comando, check=True) # Se asegura que la ejecución del comando sea efectiba
             print(f"Usuario {name} creado")
-        except subprocess.CalledProcessError as e: # Maneja el error cuando un comando ejecutado con subprocess no funciona correctamente, se pone "e" despues de as como acortación de error
+        except subprocess.CalledProcessError as e: # Maneja el error cuando un comando ejecutado con subprocess no funciona correctamente, se pone "e" despues de as como abreviación de error
             print(f"Error al crear el usuario: {e}")
         else:
             print("El nombre no puede estar vacío")
@@ -69,7 +70,7 @@ while ops:
     
     elif ops == "5":
         print ("Se actulizarán los paquetes")
-        comando= ["sudo" "apt" "update"]
+        comando= ["sudo","apt","update"]
         try:
             subprocess.run(comando,check= True)
         except subprocess.CalledProcessError as e:
@@ -77,7 +78,7 @@ while ops:
     
     elif ops == "6":
         print ("Se actulizarán los paquetes")
-        comando= ["sudo" "apt" "upgrade"]
+        comando= ["sudo","apt","upgrade"]
         try:
             subprocess.run(comando,check= True)
         except subprocess.CalledProcessError as e:
