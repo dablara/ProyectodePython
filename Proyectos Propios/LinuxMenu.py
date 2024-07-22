@@ -22,8 +22,7 @@ while ops:
     4. Mostrar interfaces de red
     5. Ejecutar Update 
     6. Ejecutar Upgrade
-    7: Viajar
-    8. Salir 
+    7. Salir 
     """)
      
     ops= input("¿Qué opción deseas? ")
@@ -83,14 +82,6 @@ while ops:
             subprocess.run(comando,check= True)
         except subprocess.CalledProcessError as e:
             print("No se ha puesto bien el comando")
-
     elif ops == "7":
-        comando= ["sl"]
-        try:
-            subprocess.run(comando,check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"El comando no es correcto")
-   
-    elif ops == "8":
         print(f"Adios, Gracias por usar nuestro script")
         quit()
