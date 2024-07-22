@@ -61,7 +61,7 @@ while ops:
          
     
     elif ops == "4":
-        print(f"Estas son las interfaces del equipo")
+        print(f"Estas son las interfaces de red del equipo")
         comando = ["ifconfig"]
         try:
             subprocess.run(comando,check=True)
