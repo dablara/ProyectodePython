@@ -94,9 +94,3 @@ while ops:
     elif ops == "8":
         print(f"Adios, Gracias por usar nuestro script")
         quit()
-
-
-
-
-        
-        
