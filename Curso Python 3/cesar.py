@@ -6,20 +6,42 @@
     
 while True:
     
-    accion = input('¿Que quieres hacer (C)ifrar o (D)escifrar? ').lower()
+    op= input('¿Quieres (C)ifrar o (D)escifrar? ').lower()
 
-    if (accion == "c"):
-        cifrado= input('Introduce texto a cifrar ')
-        num= int(input('Introduce el número del saltos a la que quieres que cifre '))
+    if (op == "c"):
+        cifrado= input('¿Que quieres cifrar ')
+        if cifrado == cifrado.upper():
+            alfa="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" # Mayusculas
+        else:
+            alfa="abcdefghijklmnñopqrstuvwxyz" # Minusculas
+        num= int(input('Introduce el número del saltos a los que quieres cifrar ')) # Número de desplazmiento que se van a dar 
+        resultado="" # Aqui se almacena el resultado
+        for cifra in cifrado:
+            if cifra in alfa:
+               resultado += alfa[(alfa.index(cifra) + num) % len(alfa)]  # Esta es la línea corregida # Recorre la cadena alfa tantas veces como tenga el valor num
+            else:
+                resultado+=cifra # Si no está en el alfabeto, lo agrega tal cual
+        print("El texto cifrado es",resultado) # Toma el valor de cifra y lo añade a resultado tal como está.
         break # Sale del bucle si la opción es válida
     
-    elif (accion == "d"):
-        print ('Introduce texto a descifrar ')
-        num2= int(input('Introduce el número del saltos a la que quieres que descifre '))
+    elif (op == "d"):
+        descifrado = input('Introduce texto a descifrar ')
+        if descifrado ==descifrado.upper():
+            alfa="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" # Mayusculas
+        else:
+            alfa="abcdefghijklmnñopqrstuvwxyz" # Minusculas
+        num2= int(input('Introduce el número del saltos a los que quieres cifrar ')) # Número de desplazmiento que se van a dar 
+        resultado="" # Aqui se almacena el resultado
+        for cifra in descifrado:
+            if cifra in alfa:
+               resultado += alfa[(alfa.index(cifra) - num2) % len(alfa)]  # Esta es la línea corregida # Recorre la cadena alfa tantas veces como tenga el valor num
+            else:
+                resultado+=cifra # Si no está en el alfabeto, lo agrega tal cual
+        print("El texto descifrado es",resultado) # Toma el valor de cifra y lo añade a resultado tal como está.
         break
    
     else:
-        print ("La parametros permitidos son (C)ifrar o (D)escifrar ")
+        print ("Los parametros permitidos son (C)ifrar o (D)escifrar ")
 
 
  
