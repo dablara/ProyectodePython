@@ -20,3 +20,4 @@ while True:
         break
     else:
         print("Los parametros permitidos son (C)ifrar o (D)escifrar.")
+        
