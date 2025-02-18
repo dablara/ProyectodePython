@@ -16,9 +16,10 @@ while True:
             alfa="abcdefghijklmnñopqrstuvwxyz" # Minusculas
         num= int(input('Introduce el número del saltos a los que quieres cifrar ')) # Número de desplazmiento que se van a dar 
         resultado="" # Aqui se almacena el resultado
+        
         for cifra in cifrado:
             if cifra in alfa:
-               resultado += alfa[(alfa.index(cifra) + num) % len(alfa)]  # Esta es la línea corregida # Recorre la cadena alfa tantas veces como tenga el valor num
+               resultado += alfa[(alfa.index(cifra) + num) % len(alfa)] # Recorre la cadena alfa tantas veces como tenga el valor num
             else:
                 resultado+=cifra # Si no está en el alfabeto, lo agrega tal cual
         print("El texto cifrado es",resultado) # Toma el valor de cifra y lo añade a resultado tal como está.
@@ -31,13 +32,13 @@ while True:
         else:
             alfa="abcdefghijklmnñopqrstuvwxyz" # Minusculas
         num2= int(input('Introduce el número del saltos a los que quieres cifrar ')) # Número de desplazmiento que se van a dar 
-        resultado="" # Aqui se almacena el resultado
+        resultado="" 
         for cifra in descifrado:
             if cifra in alfa:
-               resultado += alfa[(alfa.index(cifra) - num2) % len(alfa)]  # Esta es la línea corregida # Recorre la cadena alfa tantas veces como tenga el valor num
+               resultado += alfa[(alfa.index(cifra) - num2) % len(alfa)] # Recorre la cadena alfa tantas veces como tenga el valor num
             else:
-                resultado+=cifra # Si no está en el alfabeto, lo agrega tal cual
-        print("El texto descifrado es",resultado) # Toma el valor de cifra y lo añade a resultado tal como está.
+                resultado+=cifra 
+        print("El texto descifrado es",resultado)
         break
    
     else:
