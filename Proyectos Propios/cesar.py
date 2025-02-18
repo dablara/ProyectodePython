@@ -3,21 +3,31 @@
     # 1. Recibir un parámetro numérico.
     # 2. Recibir un texto en claro o un texto cifrado.
     # 3. Indicar la acción que queremos realizar: cifrar o descifrar.
-    
+
 while True:
-    op = input('¿Quieres (C)ifrar o (D)escifrar? ').lower()
-    if op in ['c', 'd']:
-        texto = input(f'¿Qué quieres {"cifrar" if op == "c" else "descifrar"}? ')
-        alfa = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" if texto.isupper() else "abcdefghijklmnñopqrstuvwxyz"
+    ope = input('¿Quieres (C)ifrar o (D)escifrar? ').lower()
+    if ope in ['c', 'd']:
+        texto = input(f'¿Qué quieres {"cifrar" if ope == "c" else "descifrar"}? ')
+        
         num = int(input('Introduce el número de saltos: '))
+
         resultado = ""
         for cifra in texto:
-            if cifra in alfa:
-                resultado += alfa[(alfa.index(cifra) + (num if op == "c" else -num)) % len(alfa)]
+            if cifra.isalpha():  # Si la cifra es una letra
+                if cifra.isascii():  # Solo ciframos o desciframos si la letra está en ASCII (alfabeto inglés)
+                    # Se usa ASCII de la letra
+                    inicio = ord('a') if cifra.islower() else ord('A')  # Determinamos el inicio según minúsculas o mayúsculas
+                    # Se calcula el nuevo valor ASCII desplazado
+                    valor_nuevo = (ord(cifra) - inicio + (num if ope == "c" else -num)) % 26 + inicio
+                    resultado += chr(valor_nuevo)  # Convertimos el código ASCII de vuelta a un carácter
+                else:
+                    
+                    resultado += cifra
             else:
+                # Si no es una letra (espacios, puntuación, etc.), la dejamos igual
                 resultado += cifra
-        print(f'El texto {"cifrado" if op == "c" else "descifrado"} es: {resultado}')
+
+        print(f'El texto {"cifrado" if ope == "c" else "descifrado"} es: {resultado}')
         break
     else:
-        print("Los parametros permitidos son (C)ifrar o (D)escifrar.")
-        
+        print("Los parámetros permitidos son (C)ifrar o (D)escifrar.")
