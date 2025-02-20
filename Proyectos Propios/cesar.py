@@ -13,7 +13,7 @@ while True:
 
         resultado = ""
         for cifra in texto:
-            if cifra.isalpha():  # si la cifra es una letra
+            if cifra.isalpha():  # solo ciframos o desciframos si la letra está en ascii si es ñ o con acento se queda tal cual
                 if cifra.isascii():  # solo ciframos o desciframos si la letra está en ascii
                     # se usa ASCII de la letra
                     inicio = ord('a') if cifra.islower() else ord('A')  # determinamos el inicio según minúsculas o mayúsculas
