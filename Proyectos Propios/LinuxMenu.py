@@ -1,7 +1,7 @@
 # Nombre: linuxmenu.py
 # Descripción: Un script básico en Python para la administración de Linux, con los comandos más usados en dicho sistema operativo.
 # Autor: Daniel Blanco Aranda
-# Fecha: 17-07-2024 
+# Fecha: 26-02-2025 
 
 
 # Importamos las librerías
