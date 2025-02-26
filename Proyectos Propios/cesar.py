@@ -3,6 +3,7 @@
     # 1. Recibir un parámetro numérico.
     # 2. Recibir un texto en claro o un texto cifrado.
     # 3. Indicar la acción que queremos realizar: cifrar o descifrar.
+    # Fecha: 26/02/2025
 
 while True:
     ope = input('¿Quieres (C)ifrar o (D)escifrar? ').lower()
