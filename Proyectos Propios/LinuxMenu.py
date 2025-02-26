@@ -4,7 +4,7 @@
 # Fecha: 26-02-2025 
 
 
-# Importamos las librerías
+# Importamos las librerías:
 import subprocess # Nos permite ejecutar comando tanto en Linux como en Windows
 import os # Nos permite interactuar con el Sistema operativo. 
 
