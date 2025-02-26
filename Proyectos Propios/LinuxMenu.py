@@ -4,9 +4,9 @@
 # Fecha: 26-02-2025 
 
 
-# Importamos las librerías:
+# Importamos las librerías
 import subprocess # Nos permite ejecutar comando tanto en Linux como en Windows
-import os # Nos permite interactuar con el Sistema operativo..
+import os # Nos permite interactuar con el Sistema operativo.
 
 print("Bienvenido al menú de opciones")
 print ("En este menú podras elegir entre varias opciones para una buena Administración de Linux. Para cualquier duda contacta conmigo")
