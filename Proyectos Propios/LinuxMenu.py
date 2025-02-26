@@ -11,7 +11,7 @@ import os # Nos permite interactuar con el Sistema operativo.
 print("Bienvenido al menú de opciones")
 print ("En este menú podras elegir entre varias opciones para una buena Administración de Linux. Para cualquier duda contacta conmigo")
 
-# Creamos el menú con sus opciones
+# Creamos el menú con sus opciones:
 
 ops = True
 while ops:
