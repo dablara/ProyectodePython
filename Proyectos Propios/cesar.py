@@ -1,9 +1,10 @@
-# Crear un programa Python que permita cifrar y descifrar mediante el sistema César
-# El programa debe poder
-    # 1. Recibir un parámetro numérico.
-    # 2. Recibir un texto en claro o un texto cifrado.
-    # 3. Indicar la acción que queremos realizar: cifrar o descifrar.
-    # Fecha: 26/02/2025
+# Nombre: Daniel Blanco Aranda
+    # Crear un programa Python que permita cifrar y descifrar mediante el sistema César
+    # El programa debe poder
+        # 1. Recibir un parámetro numérico.
+        # 2. Recibir un texto en claro o un texto cifrado.
+        # 3. Indicar la acción que queremos realizar: cifrar o descifrar.
+# Fecha: 26/02/2025
 
 while True:
     ope = input('¿Quieres (C)ifrar o (D)escifrar? ').lower()
